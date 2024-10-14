@@ -30,6 +30,10 @@ const userSchema = new mongoose.Schema({
     profile: {
         type: String,
         default: 'https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg'
+    },
+    answer: {
+        type: String,
+        require: [true, "Answer is required"], 
     }
     
 }, {timestamps:true})
